@@ -1,0 +1,6 @@
+Steps to Clear Cache:
+Close Visual Studio Code to ensure that no instance of the application is running.
+Navigate to the cache directories. For Windows, this is typically under %APPDATA%\Code\, for macOS it is usually ~/Library/Application Support/Code/, and for Linux, it is ~/.config/Code/.
+Once in the appropriate folder, delete the contents of the Cache, CachedData, and CachedExtensions folders.
+If you intend to clear user data as well, you could also delete or rename the User folder, which includes your settings, keybindings, and snippets. However, be mindful that this will reset VS Code to its default state.
+Restart Visual Studio Code, and it will recreate the necessary cache files.
