@@ -1,0 +1,12 @@
+_VALGRIND_
+Чтобы установить _valgrind_ на компьютер, введи одну из следующих команд: \
+brew install valgrind
+
+или, если у тебя есть root-права (для Ubuntu / Linux Mint / Debian)
+sudo apt install valgrind
+
+Чтобы запустить свой исполняемый файл с помощью этой утилиты, набери в терминале:
+valgrind --tool=memcheck --leak-check=yes  ./main.out
+
+Собственно, сам valgrind можно запустить так
+CK_FORK=no valgrind --vgdb=no --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --read-var-info=yes ./unit_test
